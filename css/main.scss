@@ -1,0 +1,599 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('../fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/cork-wallet.png"); /* Background pattern from Subtle Patterns */
+  font-family: lato, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 50px;
+    height: 50px;
+  }
+  #cart {
+    align-self: center;
+    margin-right: 14%;
+    margin-top: 10%;
+  }
+  #hamb_cart {
+    max-width: 90px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  #avatar {
+    order: 1;
+    align-self: flex-end;
+    img {
+      max-width: none;
+      height: 45px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  #avatar {
+    img {
+      height: 45px;
+      width: 55px;
+    }
+  }
+}
+
+
+
+@media (min-width: 420px) {
+  .navbar-header {
+    button {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  width: 25px;
+  height: 2px;
+}
+
+@media (min-width: 420px) {
+  .navbar-inverse .navbar-toggle .icon-bar {
+    width: 57px;
+    height: 5px;
+  }
+}
+
+.navbar-toggle {
+  float: none;
+}
+
+#bs-example-navbar-collapse-1 {
+  background-color: black;
+}
+
+#main_logo {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+@media (min-width: 420px) {
+  #main_logo {
+    min-width: 120px;
+    min-height: 120px;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+}
+
+#title_container {
+  flex-grow: 1;
+  h1 {
+    padding-top: 5%;
+    padding-left: 5%;
+    font-family: latobold, sans-serif;
+    color: whitesmoke;
+    font-size: 2em;
+    span {
+      color: #c83838;
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  #title_container {
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+}
+
+.navbar-nav {
+  li {
+    a {
+      font-size: 2em;
+      margin: 5%;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: whitesmoke;
+}
+
+.nav>li:hover {
+  background-color: #c83838;
+}
+
+#main_section {
+  margin-top: 0;
+  background-image: url("../images/cork-wallet.png");
+  width: 100vw;
+  text-align: center;
+  flex-grow: 1;
+  border-right: 5px solid black;
+  h2 {
+    margin: 0;
+    padding-top: 5%;
+    font-family: lato-bold, sans-serif;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  h3 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  h4 {
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    font-family: lato-bold, sans-serif;
+    color: #c83838;
+  }
+  h6 {
+    font-size: 1.2em;
+    font-family: lato-bold, sans-serif;
+  }
+  p {
+    font-size: 1.5em;
+    width: 80%;
+    line-height: normal;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 767px) {
+  #main_section {
+    width: 70%;
+    margin-left: 25%;
+    margin-right: 5%;
+  }
+}
+
+.woocommerce ul.products {
+  margin: 0 auto;
+  max-width: 80vw;
+  margin-top: 10%;
+}
+
+.woocommerce ul.products li.product a img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .woocommerce ul.products li.product a img {
+    width: 60%;
+  }
+}
+
+.woocommerce ul.products li.product h3 {
+  color: #c83838;
+  font-family: lato-bold, sans-serif;
+  font-size: 1.4em;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 1.4em;
+  color: black;
+  font-family: lato-bold, sans-serif;
+}
+
+#footer {
+  width: 100vw;
+  background-color: black;
+  #social_media {
+    margin: 2%;
+    max-width: 130px;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  p {
+    font-size: 1.3em;
+    color: whitesmoke;
+    margin-top: 4%;
+    margin-left: 3%;
+  }
+  a {
+    font-size: 1.3em;
+    color: #c83838;
+    text-decoration: underline;
+    margin-top: 4%;
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 767px) {
+  #footer {
+    width: 70%;
+    margin-left: 25%;
+    margin-right: 5%;
+    height: 100px;
+    #social_media {
+      min-width: 150px;
+    }
+    p {
+      font-size: 1em;
+      margin-top: 40px;
+    }
+    a {
+      font-size: 1em;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #footer {
+    p {
+      font-size: 1.3em;
+      color: whitesmoke;
+      margin-left: 3%;
+    }
+    a {
+      font-size: 1.3em;
+      color: #c83838;
+      text-decoration: underline;
+      margin-left: 3%;
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  #footer {
+    #social_media {
+      max-width: 130px;
+      margin-right: 5%;
+      float: right;
+      margin-bottom: 4%;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  #footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.woocommerce-account .woocommerce-MyAccount-content, .woocommerce-account .woocommerce-MyAccount-navigation {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    li {
+      font-size: 1.5em;
+      a {
+        color: #c83838;
+      }
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+  a {
+    color: #c83838;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.cart_item {
+  a {
+    color: #c83838;
+  }
+  td {
+    font-size: 1.2em;
+  }
+}
+
+.shipping-calculator-button {
+  color: #c83838;
+}
+.shop_table.shop_table_responsive {
+  td {
+    font-size: 1.2em;
+  }
+}
+
+.woocommerce-page {
+  #cart {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+#product-10 > div.woocommerce-tabs.wc-tabs-wrapper {
+  display: none;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  display: none;
+}
+
+.woocommerce div.product div.images img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #c83838;
+}
+
+.woocommerce-breadcrumb {
+  a {
+    font-size: 1.5em;
+  }
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  margin-top: 2%;
+}
+
+.woocommerce div.product form.cart, .woocommerce div.product p.cart {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.u-column1.col-1 {
+  a {
+    color: #c83838;
+  }
+}
+
+#desktop_header {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  #main_header {
+    display: none;
+  }
+  #desktop_header {
+    display: block;
+    background-color: black;
+    width: 70%;
+    margin-left: 25%;
+    margin-right: 5%;
+    #title_container {
+      margin: 0 auto;
+      width: 70%;
+      text-align: center;
+      margin-bottom: 5%;
+      h1 {
+        font-size: 4em;
+        padding: 0;
+        margin-top: 7%;
+      }
+    }
+  }
+}
+
+.sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  background-color: black;
+  left: 5%;
+  display: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  float: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+  float: none;
+}
+
+@media (min-width: 767px) {
+  #menu-main_menu-1 {
+    list-style-type: none;
+    padding-left: 10%;
+    li {
+      width: 90%;
+      margin-top: 5%;
+    }
+    a {
+      color: whitesmoke;
+      font-size: 1.4em;
+      padding: 0;
+      display: block;
+      text-decoration: none;
+    }
+    li:hover {
+      background-color: #c83838;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #menu-main_menu-1 {
+    a {
+      font-size: 1.8em;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  #main_logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10%;
+    min-width: 150px;
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  #main_logo {
+    min-width: 180px;
+    min-height: 180px;
+  }
+}
+
+.sidebar_icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  flex-grow: 1;
+}
+
+@media (min-width: 767px) {
+  #footer {
+    #social_media{
+      display: none;
+    }
+  }
+  .sidebar_menu {
+    display: flex;
+  }
+  .sidebar_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    .main_logo_url {
+      flex-grow: 1;
+    }
+    #social_media {
+      display: flex;
+      justify-content: center;
+      margin: 2%;
+      flex-grow: 1;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    #main_logo {
+      flex-grow: 1;
+    }
+  }
+  .menu-main_menu-container {
+    flex-grow: 15;
+  }
+}
+
+@media (min-width: 767px) {
+  .woocommerce ul.products {
+    max-width: 60vw;
+  }
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width: 60%;
+    margin-right: 10%;
+  }
+}
+
+.wpcf7-submit {
+  min-width: 100px;
+}
+
+.wpcf7-text {
+  width: 90%;
+  color: black;
+}
+
+#wpcf7-f66-p22-o1 {
+  margin-top: 10%;
+  textarea {
+    width: 90%;
+    height: 100px;
+    color: black;
+  }
+  label{
+    color: #c83838;
+  }
+}
+
+@media (min-width: 767px) {
+  .wpcf7-text {
+    width: 80%;
+  }
+  #wpcf7-f66-p22-o1 {
+    textarea {
+      width: 80%;
+      height: 200px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
